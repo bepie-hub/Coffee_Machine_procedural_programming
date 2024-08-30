@@ -1,23 +1,14 @@
-Ten program symuluje działanie maszyny do kawy, która umożliwia użytkownikowi zakup różnych napojów kawowych (espresso, latte, cappuccino). Program monitoruje zasoby (woda, mleko, kawa) oraz śledzi zarobione pieniądze.
+This program simulates a coffee machine that allows the user to purchase various coffee drinks (espresso, latte, cappuccino). The program monitors resources (water, milk, coffee) and earned money.
 
-Główne funkcje:
+Main functions:
 
 - check_resources(key_list):
-Sprawdza, czy dostępne zasoby (woda, mleko, kawa) są wystarczające do przygotowania wybranego napoju kawowego.
-Jeśli zasobów jest za mało, wyświetla komunikat o ich braku.
+Checks if the available resources (water, milk, coffee) are sufficient to prepare selected drink. If there are not enough resources, the program shows a message about the lack of resources.
 
-- process_coins():
-Obsługuje proces wrzucania monet przez użytkownika i sprawdza, czy wprowadzona kwota jest wystarczająca do zakupu wybranego napoju.
-W przypadku, gdy kwota jest większa od ceny napoju, zwraca resztę.
-W przypadku, gdy kwota jest niewystarczająca, zwraca monety użytkownikowi.
+-process_coins(): 
+Handles the user's coin insertion process and checks whether the entered amount is sufficient to purchase selected drink. If the amount is bigger than the price of the drink, it returns the change. If the amount is insufficient, it returns the coins to the user.
 
-Program działa w pętli, pytając użytkownika, co chciałby wypić: espresso, latte, cappuccino lub też zakończyć działanie maszyny (off).
-Wpisanie report wyświetla bieżący stan zasobów (woda, mleko, kawa) oraz zarobione pieniądze.
-Program przetwarza wybór użytkownika, sprawdzając zasoby, przetwarzając monety i dokonując odpowiednich operacji.
+The program works in a loop, asking the user what he would like to drink: espresso, latte, cappuccino, or turn off the machine (off). Entering 'report' displays the current state of resources (water, milk, coffee) and earned money. The program processes the user's selection, checks the resources, processes the coins and performs the appropriate operations.
 
-Przykład użycia:
-Program prosi użytkownika o wybór napoju: "What would you like to drink? (espresso/latte/cappuccino):".
-Jeśli użytkownik wybierze "espresso", program sprawdzi, czy dostępna jest wystarczająca ilość wody i kawy.
-Użytkownik zostanie poproszony o wrzucenie monet i podanie ich liczby (quarter, dime, nickel, penny).
-Jeśli wpłacona kwota jest wystarczająca, program przygotuje kawę, wyda resztę (jeśli jest taka potrzeba) i zaktualizuje stan zasobów.
-Proces powtarza się do momentu, gdy użytkownik wpisze "off", co wyłączy program.
+Usage example: 
+the program asks the user to choose a drink: “What would you like to drink? (espresso/latte/cappuccino):”. If the user selects “espresso,” the program will check if enough water and coffee are available. The user will be asked to determine number of coins (quarter, dime, nickel, penny). If the amount is sufficient, the program will prepare the coffee, give the change (if needed) and update level of the resources. The process works till the user enters 'off'(break the loop).
