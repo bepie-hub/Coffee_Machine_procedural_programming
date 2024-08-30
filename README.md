@@ -5,7 +5,7 @@ Main functions:
 - check_resources(key_list):
 Checks if the available resources (water, milk, coffee) are sufficient to prepare selected drink. If there are not enough resources, the program shows a message about the lack of resources.
 
--process_coins(): 
+- process_coins(): 
 Handles the user's coin insertion process and checks whether the entered amount is sufficient to purchase selected drink. If the amount is bigger than the price of the drink, it returns the change. If the amount is insufficient, it returns the coins to the user.
 
 The program works in a loop, asking the user what he would like to drink: espresso, latte, cappuccino, or turn off the machine (off). Entering 'report' displays the current state of resources (water, milk, coffee) and earned money. The program processes the user's selection, checks the resources, processes the coins and performs the appropriate operations.
